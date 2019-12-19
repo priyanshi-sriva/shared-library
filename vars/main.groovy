@@ -1,17 +1,17 @@
 #!/usr/bin/env groovy
 
 def call(Map config){
-    echo "Testing Testing"
-    echo config.company
+    echo "Demo"
     pipeline {
     agent none
     stages {
-        stage('No-op') {
+        stage('test') {
             agent{
                     label 'master'
             }
             steps {
                 sh 'ls'
+		sh 'pwd'
             }
         }
     }
