@@ -10,7 +10,6 @@ def call(Map config){
                     label 'master'
             }
             steps {
-                sh 'ls'
 		sh 'pwd'
             }
         }
