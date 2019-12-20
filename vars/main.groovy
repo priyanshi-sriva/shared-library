@@ -1,14 +1,11 @@
 #!/usr/bin/env groovy
 
-def call(Map config){
+def call(){
     echo "Demo"
     pipeline {
     agent none
     stages {
-        stage('test') {
-            agent{
-                    label 'master'
-            }
+        stage('test')
             steps {
 		sh 'pwd'
             }
