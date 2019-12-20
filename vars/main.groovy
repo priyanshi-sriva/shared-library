@@ -12,5 +12,3 @@ def call(){
         }
     }
 }
-return this    
-}
