@@ -3,7 +3,6 @@
 def call(){
     echo "Demo"
     pipeline {
-    agent none
     stages {
         stage('test')
             steps {
