@@ -1,6 +1,8 @@
-#!/usr/bin/env groovy
+#!/usr/bin/groovy
 
-def call(){
+
+def call(message){
     echo "Demo"
-    echo "Testing 123"  
+    echo "Testing 123" 
+    echo "${message}" 
       }
