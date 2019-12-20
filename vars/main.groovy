@@ -2,13 +2,5 @@
 
 def call(){
     echo "Demo"
-    pipeline {
-    stages {
-        stage('test')
-            steps {
-		sh 'pwd'
-            }
-        }
-    }
-return this
-}
+    echo "Testing 123"  
+      }
