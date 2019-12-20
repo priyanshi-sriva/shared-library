@@ -4,5 +4,14 @@
 def call(message){
     echo "Demo"
     echo "Testing 123" 
-    echo "${message}" 
+    echo "${message}"
+    pipeline{
+    stages{
+     stage('Stage1'){
+	steps{
+        sh 'pwd'
+      }
+		}
+	  }
+	} 
       }
