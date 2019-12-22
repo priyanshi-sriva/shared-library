@@ -17,6 +17,7 @@ def call(message,BRANCH){
             }
         }
 	stage('clone') {
+	agent none
 	steps {
 script {
 git(url: 'git@github.com:priyanshi-sriva/shared-library.git', branch: "${BRANCH}")
