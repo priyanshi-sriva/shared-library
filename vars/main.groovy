@@ -1,7 +1,7 @@
 #!/usr/bin/groovy
 
 
-def call(message){
+def call(message,BRANCH){
     echo "Demo"
     echo "Testing 123" 
     echo "${message}"
@@ -16,6 +16,14 @@ def call(message){
                 sh 'ls'
             }
         }
+	stage('clone') {
+	steps {
+script {
+git(url: 'git@github.com:priyanshi-sriva/shared-library.git', branch: "${BRANCH}")
+   }
+
+     }
+   }
     }
 }     
 
