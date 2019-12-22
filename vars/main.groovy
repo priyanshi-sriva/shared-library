@@ -1,7 +1,7 @@
 #!/usr/bin/groovy
 
 
-def call(message){
+def call(message,BRANCH){
     echo "Demo"
     echo "Testing 123" 
     echo "${message}"
@@ -16,6 +16,15 @@ def call(message){
                 sh 'ls'
             }
         }
+        stage('Clone') {
+		steps {
+	script {
+	git(url: '', branch: "${BRANCH}")
+ 	}
+
+      }
+
+	}
     }
 }     
 
