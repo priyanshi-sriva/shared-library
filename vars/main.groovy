@@ -13,7 +13,6 @@ def call(message){
                 sh 'ls'
             }
         }
-	stages{
         stage("git pull"){
             steps{
                 script{
@@ -37,4 +36,3 @@ def call(message){
      }
    }
     }
-}
