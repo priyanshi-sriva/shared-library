@@ -16,18 +16,7 @@ def call(message,BRANCH){
                 sh 'ls'
             }
         }
-	stage('clone') {
-	agent {
-		label 'master'
-}
-	steps {
-script {
-git(url: 'git@github.com:priyanshi-sriva/shared-library.git', branch: "${BRANCH}")
-   }
 
      }
    }
     }
-}     
-
- }
