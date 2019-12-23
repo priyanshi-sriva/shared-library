@@ -9,9 +9,6 @@ def call(message){
     agent any
     stages {
         stage('No-op') {
-            #agent{
-            #        label 'master'
-            #}
             steps {
                 sh 'ls'
             }
